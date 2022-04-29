@@ -30,7 +30,7 @@
 		    background-color: #111;
 		    overflow-x: hidden;
 		    transition: 0.5s;
-		    padding-top: 60px;
+		    /* padding-top: 60px; */
 		}
 		
 		.sidenav a {
@@ -63,7 +63,7 @@
 	</style>
 	<style type="text/css">
 	    .container {
-	            width: 310px;
+	            width: ;
 	            height: 220px;
 				background-color: rgba(250, 250, 250);
 	            margin: 0 auto;
@@ -74,7 +74,7 @@
 	            width: 100%;
 	            height: 42px;
 	            top: 4px;
-	            position: relative;
+	            /* position: relative; */
 				margin-bottom: 20px;
 	        }
 	        .tx1 {
@@ -130,25 +130,21 @@
 	</style>
 	<script type="text/javascript">
 		function openNav() {
-			document.getElementById("home").style.filter = "blur(20px)";
-			// document.body.style.backgroundColor = "rgba(0,0,0,.6)";
-		    document.getElementById("mySidenav").style.left = "0%";
-			// document.getElementById("bd2").style.background-color = "red";
-		  document.getElementById("mySidenav2").style.width = "40%";
-		  document.getElementById("mySidenav2").style.marginLeft = "60%";
-			// $(".mySidenav").animate({opacity:'0.8'},"slow");
-			// document.getElementsByClassName("bd2").style.bgColor="#7FFFD4";	
-		    document.getElementById("main").style.marginLeft = "250px";
-			
+				
+			// document.getElementById("home").style.backgroundColor = "red";
+			document.getElementById("mySidenav").style.left = "0%";
+			document.getElementById("mySidenav2").style.width = "40%";
+			document.getElementById("mySidenav2").style.marginLeft = "60%";
+			// document.getElementById("hh1").style.filter = "blur(1px)";
 		}
 		
 		function closeNav() {
-			document.getElementById("home").style.filter = "blur(0px)";
-		  document.getElementById("mySidenav2").style.left = "0%";
-		    document.getElementById("mySidenav").style.left = "-72%";
-		    document.getElementById("mySidenav2").style.width= "0";
-			document.body.style.backgroundColor = "rgba(0,0,0,.05)";
-		  
+			
+			// document.getElementById("home").style.backgroundColor = "wheat";
+			document.getElementById("mySidenav").style.left = "-72%";
+			document.getElementById("mySidenav2").style.width = "-40%";
+			document.getElementById("mySidenav2").style.marginLeft = "-60%";
+			// document.getElementById("hh1").style.filter = "blur(0px)";
 		}
 		// $(document).ready(function(){
 		//   $(".celan").click(function(){
@@ -252,14 +248,22 @@
 			}
 	
 	</script>
-	<body class="bd" >
+	<body class="bd" id="home" >
 		
-		<div class="main" id="home" >
-			<h1 style="text-align: center;background-color: ;">超实用导航</h1>
-			<a href="#home" style="text-align: center;width: 50px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;position: fixed;right: 0.625rem;bottom: 16.25rem;">主页</a>
-			<span class="celan" style="text-align: center;width: 50px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;position: fixed;right: 0.625rem;top: 5.625rem;" onclick="openNav();">侧栏</span>
 			
-			<div class="con2" style="display: ;background-color: ;width: 90%;margin: 0 auto;margin-top: 50px;" >
+		
+		<div class="main"  >
+			<div  style="width: 100%;height: 2.5rem;background-color: white;position: fixed;top: 0rem;">
+				<a onclick="openNav();"  style="float: left;text-align: center;width: 40px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;margin-top: 5px;"><img src="../menu.png" style="width: 30px;height: 30px;"></a>
+				<h2   style="color: #555555;margin-right: 35px;text-align: center;background-color: ;margin-top: 3px;">超实用导航</h2>
+				
+			</div>
+				
+			
+			<a href="#home" style="margin-top: 10px;text-align: center;width: 30px;height: 30px;background-color: rgba(210,210,210,.5);border-radius: 100%;font-size: 1.25rem;position: fixed;right: 0px;bottom: 6.25rem"><img src="../up.png" style="width: 30px;height: 30px;"></a>
+			<!-- <span class="celan" style="text-align: center;width: 50px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;position: fixed;right: 0.625rem;top: 5.625rem;" onclick="openNav();">侧栏</span> -->
+			
+			<div id="con2" class="con2" style="display: ;background-color: ;width: 90%;margin: 0 auto;margin-top: 60px;" >
 				<!-- <span class="span-title" >聚合搜索</span> -->
 				<div style="margin-top: 15px;margin-bottom: 30px;" class="container">
 					<!-- form表单回车刷新，不能触发跳转页面，所以改为div-->
@@ -269,7 +273,8 @@
 						
 			  </div> -->
 						<h2 style="text-align: center;color: #317EF3;">聚合搜索</h2>
-						<div class="parent">
+						<div id="" style="width: 308px;margin: 0 auto;">
+							<div class="parent">
 							<input  class="tx1" id="text" name="q" type="text" autofocus=true spellcheck="true" onkeypress="if (event.keyCode == 13) showResult();" onkeydown="entersearch(event)"/><br>
 							<input class="btn" type="button"   value="百度" onclick="baidu();" />
 							<input class="btn" type="button"   value="知乎" onclick="zhihu();" />
@@ -279,9 +284,11 @@
 							<input class="btn2" type="button"   value="小众技术" onclick="xzjs();" />
 							<input class="btn2" type="button"   value="爱达杂货" onclick="adzh();" />
 						</div>
+						</div>
+						
 					</div>
 			</div>
-			<div class="main-h" style="width: 90%;height: 15.625rem;margin: 0 auto;background-color: #;" onclick="closeNav();">
+			<div class="main-h" style="width: 90%;height: 15.625rem;margin: 0 auto;background-color: #;" >
 				<span style="font-size: 1.5rem;margin: 0 auto;display: block;text-align: center;">统信系统实用网址</span>
 				<ul>
 				
@@ -339,9 +346,9 @@
 						
 				</ul>
 			</div><br>
-			<div style="width: 90%;height: 18.75rem;margin: 0 auto;background-color: #;">
-				<span style="font-size: 1.5rem;margin: 0 auto;display: block;text-align: center;">网络及数据库</span>
-				<ul style="margin: 0 auto;width: 70%;">
+			<div style="width: 70%;height: 18.75rem;margin: 0 auto;background-color: #;">
+				<span style="font-size: 1.5rem;display: block;text-align: center;">网络及数据库</span>
+				<ul style="width: 100%;">
 					<li style="width: 100%;margin: 5px 0;"><a target="_blank" href="https://blog.csdn.net/qq_34028816/article/details/109887378">交换机的基本配置</a></li>
 							
 					<li style="width: 100%;margin: 5px 0;"><a target="_blank" href="https://blog.csdn.net/li1914309758/article/details/79900011">VLAN及子网划分</a></li>
@@ -354,7 +361,7 @@
 			</div><br>
 		</div>
 		
-		<div id="mySidenav" class="sidenav" style="background-color: #ccc;transition:.5s;width: 250px;left: -72%;">
+		<div id="mySidenav" class="sidenav" style="position: fixed;background-color: #ccc;transition:.5s;width: 220px;left: -72%;">
 		<h2 style="margin-left: 30px;">快速访问</h2>
 		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		  <a href="#" id="a">运维查询页</a>
@@ -364,14 +371,17 @@
 		  <a href="#">命令速查</a>
 		  
 		</div>
-		<div id="mySidenav2" class="sidenav" style="background-color: rgba(0,0,0,.001);filter: blur(1px);transition:0s;"onclick="closeNav()">
+		<div id="mySidenav2" class="sidenav" style="background-color: rgba(255, 255, 255, .1);transition:0s;"onclick="closeNav()">
 		 
-		</div>
+		
 		
 		  
 		
 	</body>
 
 </html>
+
+
+
 
 
