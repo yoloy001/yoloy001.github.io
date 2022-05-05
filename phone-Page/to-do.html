@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		 <meta content="width=device-width,user-scalable=no" name="viewport">
+		<title>超实用导航页</title>
+	<!-- <link rel="stylesheet" type="text/css" href="index-phone.css"/> -->
+	
+	
+	</head>
+
+	<!-- 
+ 超链接空标签模板
+ <a href=""></a> 
+ 换行标签
+ <br>
+ style=""
+ <div></div> <p></p>
+-->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
+	<style type="text/css">
+		.sidenav {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    /* z-index: 1; */
+		    top: 0;
+		    left: 0;
+		    background-color: #111;
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		    /* padding-top: 60px; */
+		}
+		
+		.sidenav a {
+		    padding: 8px 8px 8px 32px;
+		    text-decoration: none;
+		    font-size: 25px;
+		    color: #818181;
+		    display: block;
+		    transition: 0.3s;
+		}
+		
+		.sidenav a:hover, .offcanvas a:focus{
+		    color: #f1f1f1;
+		}
+		
+		.sidenav .closebtn {
+		    position: absolute;
+		    top: 0;
+		    right: 25px;
+		    font-size: 36px;
+		    margin-left: 50px;
+		}
+		
+		
+		
+		/* @media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		} */
+	</style>
+	
+	<script type="text/javascript">
+		function openNav() {
+				
+			// document.getElementById("home").style.backgroundColor = "red";
+			document.getElementById("mySidenav").style.left = "0%";
+			document.getElementById("mySidenav2").style.width = "40%";
+			document.getElementById("mySidenav2").style.marginLeft = "60%";
+			// document.getElementById("hh1").style.filter = "blur(1px)";
+		}
+		
+		function closeNav() {
+			
+			// document.getElementById("home").style.backgroundColor = "wheat";
+			document.getElementById("mySidenav").style.left = "-72%";
+			document.getElementById("mySidenav2").style.width = "-40%";
+			document.getElementById("mySidenav2").style.marginLeft = "-60%";
+			// document.getElementById("hh1").style.filter = "blur(0px)";
+		}
+		// $(document).ready(function(){
+		//   $(".celan").click(function(){
+		//     $("#mySidenav").animate({
+		//       width:'toggle'
+		//     });
+		//   });
+		// });
+		// $(document).ready(function(){
+		//   $("button").click(function(){
+		//     var div=$("div");
+		//     div.animate({opacity:'0.4'},"slow");
+		
+		//   });
+		// });
+	</script>
+	
+	<body class="bd" id="home" >
+		
+			
+		
+		<div class="main"  >
+			<div  style="width: 100%;height: 2.5rem;background-color: white;position: fixed;top: 0rem;left: 0;">
+				<a onclick="openNav();"  style="float: left;text-align: center;width: 40px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;margin-top: 5px;"><img src="../menu.png" style="width: 30px;height: 30px;"></a>
+				<h2   style="color: #555555;margin-right: 35px;text-align: center;background-color: ;margin-top: 3px;">超实用导航</h2>
+				
+			</div>
+				
+			
+			<!-- <a href="#home" style="margin-top: 10px;text-align: center;width: 30px;height: 30px;background-color: rgba(210,210,210,.5);border-radius: 100%;font-size: 1.25rem;position: fixed;right: 0px;bottom: 6.25rem"><img src="../up.png" style="width: 30px;height: 30px;"></a> -->
+			<!-- <span class="celan" style="text-align: center;width: 50px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;position: fixed;right: 0.625rem;top: 5.625rem;" onclick="openNav();">侧栏</span> -->
+			
+			
+			<div id="myDIV" class="header" style="width: 100%;">
+			  <h2 style="margin:20px">My To Do List</h2>
+			  <input type="text" id="myInput" placeholder="待办...">
+			  <span onclick="newElement()" class="addBtn" style="height: 38px;">添加待办</span>
+			</div>
+			
+			<ul id="myUL" style="width: 100%;">
+			  <li>待办</li>
+			  <li class="checked">已完成</li>
+			  
+			</ul>
+			<style type="text/css">
+				body {
+				  margin: 0;
+				  min-width: 250px;
+				}
+				
+				/* Include the padding and border in an element's total width and height */
+				* {
+				  box-sizing: border-box;
+				}
+				
+				/* Remove margins and padding from the list */
+				ul {
+				  margin: 0;
+				  padding: 0;
+				}
+				
+				/* Style the list items */
+				ul li {
+				  cursor: pointer;
+				  position: relative;
+				  padding: 12px 8px 12px 40px;
+				  background: #eee;
+				  font-size: 18px;
+				  transition: 0.2s;
+				  
+				  /* make the list items unselectable */
+				  -webkit-user-select: none;
+				  -moz-user-select: none;
+				  -ms-user-select: none;
+				  user-select: none;
+				}
+				
+				/* Set all odd list items to a different color (zebra-stripes) */
+				ul li:nth-child(odd) {
+				  background: #f9f9f9;
+				}
+				
+				/* Darker background-color on hover */
+				ul li:hover {
+				  background: #ddd;
+				}
+				
+				/* When clicked on, add a background color and strike out text */
+				ul li.checked {
+				  background: #888;
+				  color: #fff;
+				  text-decoration: line-through;
+				}
+				
+				/* Add a "checked" mark when clicked on */
+				ul li.checked::before {
+				  content: '';
+				  position: absolute;
+				  border-color: #fff;
+				  border-style: solid;
+				  border-width: 0 2px 2px 0;
+				  top: 10px;
+				  left: 16px;
+				  transform: rotate(45deg);
+				  height: 15px;
+				  width: 7px;
+				}
+				
+				/* Style the close button */
+				.close {
+				  position: absolute;
+				  right: 0;
+				  top: 0;
+				  padding: 12px 16px 12px 16px;
+				}
+				
+				.close:hover {
+				  background-color: #f44336;
+				  color: white;
+				}
+				
+				/* Style the header */
+				.header {
+				  background-color: #f44336;
+				  padding: 30px 40px;
+				  color: white;
+				  text-align: center;
+				  padding-top: 80px;
+				  padding-bottom: 40px;
+				}
+				
+				/* Clear floats after the header */
+				.header:after {
+				  content: "";
+				  display: table;
+				  clear: both;
+				}
+				
+				/* Style the input */
+				input {
+				  border: none;
+				  width: 65%;
+				  padding: 10px;
+				  float: left;
+				  font-size: 16px;
+				}
+				
+				/* Style the "Add" button */
+				.addBtn {
+				  padding: 10px;
+				  width: 35%;
+				  background: #d9d9d9;
+				  color: #555;
+				  float: left;
+				  text-align: center;
+				  font-size: 16px;
+				  cursor: pointer;
+				  transition: 0.3s;
+				}
+				
+				.addBtn:hover {
+				  background-color: #bbb;
+				}
+			</style>	
+			<script type="text/javascript">
+				// Create a "close" button and append it to each list item
+				var myNodelist = document.getElementsByTagName("LI");
+				var i;
+				for (i = 0; i < myNodelist.length; i++) {
+				  var span = document.createElement("SPAN");
+				  var txt = document.createTextNode("\u00D7");
+				  span.className = "close";
+				  span.appendChild(txt);
+				  myNodelist[i].appendChild(span);
+				}
+				
+				// Click on a close button to hide the current list item
+				var close = document.getElementsByClassName("close");
+				var i;
+				for (i = 0; i < close.length; i++) {
+				  close[i].onclick = function() {
+				    var div = this.parentElement;
+				    div.style.display = "none";
+				  }
+				}
+				
+				// Add a "checked" symbol when clicking on a list item
+				var list = document.querySelector('ul');
+				list.addEventListener('click', function(ev) {
+				  if (ev.target.tagName === 'LI') {
+				    ev.target.classList.toggle('checked');
+				  }
+				}, false);
+				
+				// Create a new list item when clicking on the "Add" button
+				function newElement() {
+				  var li = document.createElement("li");
+				  var inputValue = document.getElementById("myInput").value;
+				  var t = document.createTextNode(inputValue);
+				  li.appendChild(t);
+				  if (inputValue === '') {
+				    alert("You must write something!");
+				  } else {
+				    document.getElementById("myUL").appendChild(li);
+				  }
+				  document.getElementById("myInput").value = "";
+				
+				  var span = document.createElement("SPAN");
+				  var txt = document.createTextNode("\u00D7");
+				  span.className = "close";
+				  span.appendChild(txt);
+				  li.appendChild(span);
+				
+				  for (i = 0; i < close.length; i++) {
+				    close[i].onclick = function() {
+				      var div = this.parentElement;
+				      div.style.display = "none";
+				    }
+				  }
+				}
+			</script>
+			
+		</div>
+		
+		<div id="mySidenav" class="sidenav" style="position: fixed;background-color: #ccc;transition:.5s;width: 220px;left: -72%;">
+		<h2 style="margin-left: 30px;">快速访问</h2>
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index-phone.html">主页</a>
+		  <a href="#" id="a">运维查询页</a>
+		  <a href="#">精品导航页</a>
+		  <a href="#">聚合导航页</a>
+		  <a href="to-do.html">功能测试页</a>
+		  <a href="#">命令速查</a>
+		  
+		</div>
+		
+		<div id="mySidenav2" class="sidenav" style="background-color: rgba(255, 255, 255, .1);transition:0s;"onclick="closeNav()">
+		</div>
+		
+	</body>
+
+</html>
+
+
+
+
+
