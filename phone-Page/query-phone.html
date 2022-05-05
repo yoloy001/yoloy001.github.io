@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		 <meta content="width=device-width,user-scalable=no" name="viewport">
+		<title>超实用导航页</title>
+	
+	</head>
+
+	<!-- 
+ 超链接空标签模板
+ <a href=""></a> 
+ 换行标签
+ <br>
+ style=""
+ <div></div> <p></p>
+-->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+	</script>
+	
+	<style type="text/css">
+		body {
+			background-color: rgba(0,0,0,.05);
+		}
+		.main {
+			width: 100%;
+			height: 920px;
+		}
+		a:link {
+			color: #000000;
+		}
+	
+		a:visited {
+			color: #000000;
+		}
+	
+		a {
+			text-decoration: none;
+			padding-left: 10px;
+			
+		}
+	
+		li {
+			padding-top: 10px;
+			list-style: none;
+			
+			height: 2.25rem;
+			background-color: rgba(250, 250, 250);
+			border-radius: 2px;
+			margin: 5px 0;
+			float: left;
+			    font-size: 1.25rem;
+		}
+		ul {
+			height: 420px;
+			background-color: ;
+			text-align: center;
+			padding-inline-start: 0px;
+			float: left;
+		}
+		.ul-1 {
+			width: 130px
+		}
+		.ul-2 {
+			width: 180px
+		}
+		.ul-1 li{
+			width: 120px;
+			
+		}
+		.ul-2 li{
+			width: 170px;
+		}
+		
+	</style>
+	<style type="text/css">
+		.sidenav {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    /* z-index: 1; */
+		    top: 0;
+		    left: 0;
+		    background-color: #111;
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		    /* padding-top: 60px; */
+		}
+		
+		.sidenav a {
+		    padding: 8px 8px 8px 32px;
+		    text-decoration: none;
+		    font-size: 25px;
+		    color: #818181;
+		    display: block;
+		    transition: 0.3s;
+		}
+		
+		.sidenav a:hover, .offcanvas a:focus{
+		    color: #f1f1f1;
+		}
+		
+		.sidenav .closebtn {
+		    position: absolute;
+		    top: 0;
+		    right: 25px;
+		    font-size: 36px;
+		    margin-left: 50px;
+		}
+		
+		
+		
+		/* @media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		} */
+	</style>
+	
+	
+	<body class="bd" id="home" >
+		
+			
+		
+		<div class="main">
+			<!-- 顶部固定栏 -->
+			<div  style="width: 100%;height: 2.5rem;background-color: white;position: fixed;top: 0rem;left: 0;">
+				<a onclick="openNav();"  style="float: left;text-align: center;width: 40px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;margin-top: 5px;"><img src="../menu.png" style="width: 30px;height: 30px;"></a>
+				<h2   style="color: #555555;margin-right: 35px;text-align: center;background-color: ;margin-top: 3px;">超实用导航</h2>
+				
+			</div>
+				
+			
+			<!-- <a href="#home" style="margin-top: 10px;text-align: center;width: 30px;height: 30px;background-color: rgba(210,210,210,.5);border-radius: 100%;font-size: 1.25rem;position: fixed;right: 0px;bottom: 6.25rem"><img src="../up.png" style="width: 30px;height: 30px;"></a> -->
+			<!-- <span class="celan" style="text-align: center;width: 50px;height: 28px; background-color: white;border-radius: 0.125rem;font-size: 1.25rem;position: fixed;right: 0.625rem;top: 5.625rem;" onclick="openNav();">侧栏</span> -->
+			
+				
+			<!-- 主页面-板块1 -->
+			
+			<div style="background-color: ;width: 100%;margin-top: 70px;">
+					<h3 style="font-size: 20px;margin-left: 50px;margin-bottom: 0px;">linux命令</h3>
+					<div id="" style="width: 310px;height: 450px;margin: 0 auto;">
+						<ul class="ul-1" style="float: left;">
+								
+								<li>who</li>
+								<li>ls /home</li>
+								<li>df -h</li>
+								<li>du -sh *</li>
+								<li>init 0</li>
+								<li>init 6</li>
+								<li style="height: 50px;">cat /etc/os-version</li>
+								
+							</ul>
+							<ul class="ul-2" style="float: left;">
+								
+								<li>查看用户名</li>
+								<li>查看系统用户</li>
+								<li>查看磁盘占用</li>
+								<li>查看所有文件大小</li>
+								<li>关机</li>
+								<li>reboot/重启</li>
+								<li style="height: 50px;">查看系统版本</li>
+								
+							
+						</ul>
+					</div>
+					
+				</div>
+			
+				
+				<!-- 主页面-板块2 -->
+				<div style="background-color: ;width: 100%;">
+						
+						<h3 style="font-size: 20px;margin-left: 50px;margin-bottom: 0px;">Windows命令</h3>
+						<div id="" style="width: 310px;height: 450px;margin: 0 auto;">
+							<ul class="ul-1" style="float: left;">
+								
+								<li>control</li>
+								<li>mstsc</li>
+								<li>dxdiag</li>
+								<li>msconfig</li>
+								<li>services.msc</li>
+								<li>gpedit.msc</li>
+								<li>regedit</li>
+								<li>gpupdate</li>
+								
+							</ul>
+							<ul class="ul-2" style="float: left;">
+								
+								<li>控制中心</li>
+								<li>远程控制</li>
+								<li>主机详细信息</li>
+								<li>开机启动项管理</li>
+								<li>服务编辑器</li>
+								<li>组策略编辑器</li>
+								<li>注册表编辑器</li>
+								<li>更新组策略</li>
+								
+							</ul>
+						</div>
+						
+					</div>
+			
+		</div>
+		
+		<div id="mySidenav" class="sidenav" style="position: fixed;background-color: #ccc;transition:.5s;width: 220px;left: -72%;">
+		<h2 style="margin-left: 30px;">快速访问</h2>
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="index-phone.html">主页</a>
+		  <a href="#" id="a">运维查询页</a>
+		  <a href="#">精品导航页</a>
+		  <a href="#">聚合导航页</a>
+		  <a href="to-do.html">功能测试页</a>
+		  
+		  
+		</div>
+		<div id="mySidenav2" class="sidenav" style="background-color: rgba(255, 255, 255, .1);transition:0s;"onclick="closeNav()">
+		</div>
+		<script type="text/javascript">
+			function openNav() {
+					
+				// document.getElementById("home").style.backgroundColor = "red";
+				document.getElementById("mySidenav").style.left = "0%";
+				document.getElementById("mySidenav2").style.width = "40%";
+				document.getElementById("mySidenav2").style.marginLeft = "60%";
+				// document.getElementById("hh1").style.filter = "blur(1px)";
+			}
+			
+			function closeNav() {
+				
+				// document.getElementById("home").style.backgroundColor = "wheat";
+				document.getElementById("mySidenav").style.left = "-72%";
+				document.getElementById("mySidenav2").style.width = "-40%";
+				document.getElementById("mySidenav2").style.marginLeft = "-60%";
+			}
+		</script> 
+		
+	</body>
+
+</html>
+
+
+
+
+
