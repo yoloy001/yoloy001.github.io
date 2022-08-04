@@ -33,9 +33,9 @@ function entersearch(event){
 	//    jumpPage(searchValue);
 	//    //alert(searchValue);
 	// }
-function baidu() {
+function fsou() {
 	text = document.getElementById('text').value;
-	url = 'http://www.baidu.com/s?ie=UTF-8&wd=' + text;
+	url = 'https://fsoufsou.com/search?q=' + text;
 	window.open(url, '_blank');
 }
 function zhihu() {
