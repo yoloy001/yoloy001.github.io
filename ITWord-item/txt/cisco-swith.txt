@@ -1,0 +1,14 @@
+<h2 class="p-2" style="font-weight: 600;">思科交换机常用配置</h2>
+<h4 id="b1" class="p-1" style="font-weight: 600;">常用配置</h4>
+<p>telnet 10.25.1.1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit 退出</p>
+<pre class="p-3 rounded" style="background-color: #292d3e;color:#89DDFF;width:500px">
+enable                   #进入特权模式
+configure terminal       #进入全局配置模式
+show vlan                #查看vlan信息
+show log                 #查看日志
+show processes cpu       #查看cpu运行状态
+show interface           #查看端口详细状态
+show running-configure   #查看交换机当前起作用的配置信息
+</pre>
+
+

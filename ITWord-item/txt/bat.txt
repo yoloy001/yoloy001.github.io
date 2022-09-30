@@ -1,0 +1,38 @@
+<h2 class="p-2" style="font-weight: 600;">bat常用命令</h2>
+<p>开机自动运行某bat脚本，将bat文件放到：C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</p>
+<h5 class="p-1" style="font-weight: 600;">常用程序</h5>
+<pre style="font-size: 16px;font-family:var(--bs-body-font-family);">
+mstsc 远程控制    control 控制面板    msconfig 开机启动项管理
+service.msc 服务编辑器    gpedit.msc 组策略编辑器    regedit  注册表编辑器
+</pre>
+<h5 class="p-1" style="font-weight: 600;">Windows查看激活期限命令：</h5>
+<pre class="p-3 rounded" style="background-color: #292d3e;color:#89DDFF;width:550px;font-size: 16px;">
+slmgr.vbs -dlv  #查看激活详细信息
+slmgr.vbs -xpr  #查看激活状态
+slmgr.vbs -dli  #查询到操作系统版本、部分产品密钥、许可证状态等
+</pre>
+<h5 class="p-1" style="font-weight: 600;">常用命令：</h5>
+<pre class="p-3 rounded" style="background-color: #292d3e;color:#89DDFF;width:550px;font-size: 16px;">
+ping 192.168.0.1 -t    不间断ping主机ip
+ipconfig  /release     释放ip地址
+ipconfig  /renew       重新获取ip地址
+netstat  help          后面加help显示帮助提示可运行信息
+netstat -a             显示所有连接和侦听端口
+arp /?                 可以得到ARP命令的详细说明
+arp -a 192.168.0.1     显示mac信息，需要ping过
+shutdown -t 3600 -s    1小时后关机
+d:                     进入相应磁盘
+dir                    显示目录中的文件和子目录列表
+pause                  暂停运行
+cls                    清除屏幕
+exit                   退出cmd程序
+cmd                    运行后还能继续输入
+wmic product get name  显示已安装程序信息
+gpupdate               更新组策略
+chkdsk i: /f		   修复磁盘命令，i改成要修复的盘符
+</pre>
+<h5 class="p-1" style="font-weight: 600;">小案例：</h5>
+<p>1.echo 111 &nbsp;&nbsp;&nbsp;&nbsp;将获得信息输出到屏幕上</p>
+<p>2.ping 192.168.0.101>>test.txt & test.txt ping 192.168.0.101  &nbsp;&nbsp;&nbsp;&nbsp; ping并输出到test.txt文件，并打开test.txt</p>
+<p>3.echo "11">test.txt &nbsp;&nbsp;&nbsp;&nbsp;输出11到test.txt文件</p>
+<p>4.start  www.baidu.com  &nbsp;&nbsp;&nbsp;&nbsp;打开指定网页</p>
