@@ -1,4 +1,0 @@
-<h2 class="p-2" style="font-weight: 600;">电脑卡慢</h2>
-<h5 class="p-1" style="font-weight: 600;">1.卸载垃圾软件，关闭广告弹窗 | wps卡顿：更换为2019版本</h5>
-<h5 class="p-1" style="font-weight: 600;">2.清理内存条灰尘 | 增加内存条容量</h5>
-<h5 class="p-1" style="font-weight: 600;">3.重装系统 | 更换硬盘</h5>
