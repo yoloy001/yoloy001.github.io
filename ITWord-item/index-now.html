@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>技术维护文档</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<style>body{min-height:100vh;min-height:-webkit-fill-available}html{height:-webkit-fill-available}main{display:flex;flex-wrap:nowrap;height:100vh;height:-webkit-fill-available;max-height:100vh;overflow-x:auto;overflow-y:hidden}.b-example-divider{flex-shrink:0;width:1.5rem;height:100vh;background-color:rgba(0,0,0,.1);border:solid rgba(0,0,0,.15);border-width:1px 0;box-shadow:inset 0 .5em 1.5em rgba(0,0,0,.1),inset 0 .125em .5em rgba(0,0,0,.15)}.bi{vertical-align:-.125em;pointer-events:none;fill:currentColor}.dropdown-toggle{outline:0}.nav-flush .nav-link{border-radius:0}.btn-toggle{display:inline-flex;align-items:center;padding:.25rem .5rem;font-weight:600;color:rgba(0,0,0,.65);background-color:transparent;border:0}.btn-toggle:hover,.btn-toggle:focus{color:rgba(0,0,0,.85);background-color:#d2f4ea}.btn-toggle::before{width:1.25em;line-height:0;content:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");transition:transform .35s ease;transform-origin:.5em 50%}.btn-toggle[aria-expanded="true"]{color:rgba(0,0,0,.85)}.btn-toggle[aria-expanded="true"]::before{transform:rotate(90deg)}.btn-toggle-nav a{display:inline-flex;padding:.1875rem .5rem;margin-top:.125rem;margin-left:1.25rem;text-decoration:none}.btn-toggle-nav a:hover,.btn-toggle-nav a:focus{background-color:#d2f4ea}.scrollarea{overflow-y:auto}.fw-semibold{font-weight:600}.lh-tight{line-height:1.25}.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media (min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}</style>
+	</head>
+	<body>
+		
+		<main>
+			<h1 class="visually-hidden">Sidebars examples</h1>
+
+			<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+				<a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+					<svg class="bi me-2" width="30" height="24">
+						<use xlink:href="#bootstrap" /></svg>
+					<span class="fs-5 fw-semibold">技术维护</span>
+				</a>
+				<ul class="list-unstyled ps-0" id="listLeft">
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse"
+						 aria-expanded="true">
+							硬件
+						</button>
+						<div class="collapse show" id="home-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="" class="link-dark rounded">黑屏</a></li>
+								<li><a href="#" class="link-dark rounded" id="pc-black2">蓝屏</a></li>
+								<li><a href="#" class="link-dark rounded" id="pc-low">电脑卡慢</a></li>
+								<li><a href="#" class="link-dark rounded" id="print">打印机连接及共享</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse"
+						 aria-expanded="false">
+							网络
+						</button>
+						<div class="collapse" id="orders-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="link-dark rounded" id="huawei-swith">华为交换机常用配置</a></li>
+								<li><a href="#" class="link-dark rounded" id="cisco-swith">思科交换机基本命令</a></li>
+								
+							</ul>
+						</div>
+					</li>
+					<!-- <li class="border-top my-3"></li> -->
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse"
+						 aria-expanded="false">
+							脚本命令
+						</button>
+						<div class="collapse" id="account-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" id="bat" class="link-dark rounded">bat命令</a></li>
+								<li><a href="#" class="link-dark rounded">shell命令</a></li>
+								<li><a href="#" class="link-dark rounded">sql命令</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+						 aria-expanded="false">
+							系统及软件
+						</button>
+						<div class="collapse" id="dashboard-collapse">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" id="os-soft" class="link-dark rounded">Windows系统</a></li>
+								<li><a href="#" class="link-dark rounded">UOS系统</a></li>
+								<li><a href="#" class="link-dark rounded">中标系统</a></li>
+								<li><a href="#" class="link-dark rounded">Linux系统</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="border-top my-3"></li>
+					<li class="mb-1">
+						<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse2"
+						 aria-expanded="false">
+							程序语言
+						</button>
+						<div class="collapse" id="account-collapse2">
+							<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+								<li><a href="#" class="link-dark rounded">html</a></li>
+								<!-- <li><a href="#" class="link-dark rounded">shell命令</a></li>
+									 <li><a href="#" class="link-dark rounded">sql命令</a></li>
+									 <li><a href="#" class="link-dark rounded">Sign out</a></li> -->
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="b-example-divider"></div>
+			<div class="container">
+				<div class="container m-2 row" style="overflow-y:auto;height:99vh">
+
+					<div class="content p-5 col-xl-8" id="pc-black">
+						<h2 id="b1" class="p-2" style="font-weight: 600;">黑屏</h2>
+						<h5 class="p-1" style="font-weight: 600;">1.清灰放电</h5>
+						<p>(1)拆掉机箱盖，拔下内存条，擦除内存条上的灰尘。</p>
+						<p>(2)拔掉电源线，扣掉纽扣电池和内存条，长按电源键7秒释放静电。</p>
+						<p>注：如果有接外置存储光盘、U盘、移动硬盘等，请移除后再重新开机。</p>
+						<h5 class="p-1" style="font-weight: 600;">2.检测电源</h5>
+						<p id="b2">(1)若清灰放电后均无反应，拔掉电源，将电源排线孔上的蓝孔（或绿孔）与黑孔进行短接。<br>&nbsp;&nbsp;&nbsp;&nbsp;风扇不转说明电源故障，
+							反之则电源良好，主板可能存在故障。</p>
+						<input class="layui-input" id="copyvalue">
+						<button type='button' class='layui-btn' onclick="copyfun()">点击复制</button>
+
+					</div>
+					<div class="col-xl-4">
+
+						<div class="d-flex flex-row justify-content-center" style="position: fixed;">
+							<div id="">
+								<span id="line" class="border-end"></span>
+							</div>
+							<div class="d-flex flex-column justify-content-center" id="">
+								<h6 style="font-size: 14px;font-weight: bold;">本页目录</h6>
+
+								<p id="list">
+									<a style="text-decoration: none;" href="#b1">DHCP配置</a><br>
+									<a style="text-decoration: none" href="#b2">端口类配置</a><br>
+									<a style="text-decoration: none" href="">路由类配置</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="timeline">
+							<div class="entry">
+								<div class="title">
+									<h3>10月</h3>
+									<p></p>
+								</div>
+
+								<div class="body">
+									<button id="close" type="button" style="float: right;">关闭</button>
+									<p>计划:<br>1. 继续完善网页内容<br>2. 学习交换机知识</p>
+
+								</div>
+							</div>
+
+							<div class="entry">
+								<div class="title">
+									<h3>9月</h3>
+									<p></p>
+								</div>
+								<div class="body">
+									<p>更新:<br>1. 新增—技术维护页<br>2. 新增—时间线<br>3. 新增—维护报告图表</p>
+
+								</div>
+							</div>
+
+							<div class="entry">
+								<div class="title">
+									<h3>8月</h3>
+									<p></p>
+								</div>
+								<div class="body">
+									<p>1.学习华为交换机知识</p>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- <button type="button" >测试按钮</button> -->
+				</div>
+
+			</div>
+
+			<div class="b-example-divider"></div>
+
+		</main>
+
+		<script>
+			/* global bootstrap: false */
+			(function() {
+				'use strict'
+				var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+				tooltipTriggerList.forEach(function(tooltipTriggerEl) {
+					new bootstrap.Tooltip(tooltipTriggerEl)
+				})
+			})()
+			
+			
+		</script>
+		
+		
+		<style>
+			#line {
+				display: inline-block;
+				/* width: 75px; */
+				height: 600px;
+				margin: 60px;
+				background-color: #f9f9f9;
+			}
+
+			#list>a {
+				color: #969faf;
+				transition: color .5s;
+			}
+
+			#list>a:hover {
+				color: #000000;
+
+			}
+		</style>
+		<script src="js/txt-load.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

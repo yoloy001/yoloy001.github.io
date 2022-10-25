@@ -1,0 +1,26 @@
+<h2 class="p-2" style="font-weight: 600;">Windows系统</h2>
+<h3 class="p-2" style="font-weight: 600;">一、AD域</h3>
+<h5 class="p-1" style="font-weight: 600;">1.此工作站和主域间信任关系失败</h5>
+<pre style="font-size:17px;font-family:none;">
+解决方法：退域后再重新加域
+注：退域加域需要在本地管理员账户登录操作
+退域到组需要输入域管理员账户及密码</pre>
+<h5 class="p-1" style="font-weight: 600;">2.加域时显示计算机名重复，有冲突</h5>
+<pre style="font-size:17px;font-family:none;">解决方法：更换计算机名或者在ad域删除计算机（为防止有人使用，不删除）</pre>
+<h5 class="p-1" style="font-weight: 600;">3.共享文件（设置用户权限后，仍无法访问）</h5>
+<pre style="font-size:16px;font-family:none;">
+权限具有累加性：假如用户同时属于两个组，两个组有不同的权限，那么用户将拥有权限的总和。
+如果其中一个权限被设置拒绝访问，则用户的最终权限就是拒绝访问。 
+
+设置权限：共享文件夹-属性-安全添加用户完全控制；高级共享里面也需要添加用户权限。
+查看已共享的文件：计算机管理-系统工具-共享文件夹-共享 会话（查看正在访问的用户）
+
+解决方法：添加Windows凭证为管理员账户（不建议这样做，相当于权限全部放开）。
+在域中的用户需要添加域名。</pre>
+<h5 class="p-1" style="font-weight: 600;">4.Win10专业版关闭系统更新（非家庭版）</h5>
+<pre style="font-size:16px;font-family:none;">
+ 1.Win+R输入gpedit.msc打开组策略编辑器
+ 2.计算机配置-管理模板-Windows组件-Windows更新
+ 3.将“配置自动更新”和“允许立即安装更新”改为已禁用
+ 4.打开cmd,输入gpupdate更新组策略
+</pre>
