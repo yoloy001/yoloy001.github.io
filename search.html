@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>聚合搜索</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	
+		<link rel="icon" href="../img/1.jpg">
+	</head>
+
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	
+	<style type="text/css">
+	    .container {
+	            width: 308px;
+	            height: 220px;
+				background-color: rgba(250, 250, 250);
+	            margin: 0 auto;
+				
+				border: 1px solid #fff;border-radius: 3px;
+	        }
+	        .parent {
+	            width: 100%;
+	            height: 140px;
+	            top: 4px;
+	            position: relative;
+				/* margin-bottom: 20px; */
+	        }
+	        .tx1 {
+	            /*输入框高度设置为40px, border占据2px，总高度为42px*/
+	            width: 300px;
+	            height: 30px;
+	            border: 2px solid #dcdcdc;border-radius: 7px;
+	            font-size: 16px;
+	            outline: none;
+	        }
+	        /* .parent>input:first-of-type:focus {
+	            border: 1px solid #317ef3;
+	            padding-left: 10px;
+	        } */
+	       .btn {
+	            /*button按钮border并不占据外围大小，设置高度42px*/
+	            width: 70px;
+	            height: 30px;
+				margin-top: 5px;
+				margin-left: 3px;
+	            /* position: absolute; */
+	            background: #549eff;
+	            border: 1px solid #fff;border-radius: 2px;
+	            color: #FFFFFF;font-weight: bold;
+	            font-size: 16px;
+	            outline: none;
+	        }
+			.btn:hover {
+			     /*button按钮border并不占据外围大小，设置高度42px*/
+			    cursor: pointer;
+			 }
+			.btn2 {
+			     /*button按钮border并不占据外围大小，设置高度42px*/
+			     width: 96px;
+			     height: 30px;
+				 margin-top: 5px;
+				 margin-left: 3px;
+			     /* position: absolute; */
+			     background: #549eff;
+			     border: 1px solid #fff;border-radius: 2px;
+			     color: #FFFFFF;font-weight: bold;
+			     font-size: 16px;text-align: center;
+			     outline: none;
+			 }
+			 .btn2:hover {
+			      /*button按钮border并不占据外围大小，设置高度42px*/
+			      
+				  cursor: pointer;
+			  }
+			 
+	</style>
+	
+	<body class="bd">
+		<script src="js/search.js"></script>
+		
+		<div class="main">
+			
+					<div class="con" style="margin: 0 auto;width: 800px;height: 400px;background-color: #fff;border: 1px solid #fff;border-radius: 10px;margin-top: 114.5px;">
+						            
+						<div style="width: 600px;height: 280px;background-color: rgba(250, 250, 250);margin-top: 42px;border: 1px solid #fff;border-radius: 10px;margin: 0 auto">
+							<div style="display: ;" class="container">
+							
+								<h1 style="margin-left: 85px;color: #317EF3;">聚合搜索</h1>
+								<div class="parent">
+									<input  class="tx1" id="text" name="q" type="text" autofocus=true spellcheck="true"  onkeydown="entersearch(event)"/><br>
+									<input class="btn" type="button"   value="F搜" onclick="fsou();" />
+									<input class="btn" type="button"   value="知乎" onclick="zhihu();" />
+									<input class="btn" type="button"   value="豆瓣" onclick="douban();" />
+									<input class="btn" type="button"   value="哔哩" onclick="bili();" /><br>
+									<input class="btn2" type="button"   value="厂长资源" onclick="chzh();" />
+									<input class="btn2" type="button"   value="小众技术" onclick="xzjs();" />
+									<input class="btn2" type="button"   value="爱达杂货" onclick="adzh();" />
+									<input class="btn2" type="button"   value="联想商店" onclick="lenovo();" />
+									<input class="btn2" type="button"   value="腾讯软件" onclick="tengxun();" />
+									<input class="btn2" type="button"   value="360软件" onclick="soft360();" />
+								</div>
+							</div>
+						 </div>
+					</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+
