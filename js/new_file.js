@@ -71,6 +71,22 @@ function cbh() {
 	url = 'https://cupfox.app/search?key=' + text ;
 	window.open(url, '_blank');
 }
+// 软件下载
+function lenovo() {
+	text = document.getElementById('text').value;
+	url = 'https://lestore.lenovo.com/search?k=' + text;
+	window.open(url, '_blank');
+}
+function tengxun() {
+	text = document.getElementById('text').value;
+	url = 'https://pc.qq.com/search.html#!keyword=' + text;
+	window.open(url, '_blank');
+}
+function soft360() {
+	text = document.getElementById('text').value;
+	url = 'https://baoku.360.cn/soft/search?kw=' + text;
+	window.open(url, '_blank');
+}
 if( /Android/i.test(navigator.userAgent) ) {
 	window.location.href="phone-Page/index-phone.html"
     // document.write("移动")
