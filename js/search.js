@@ -35,6 +35,11 @@ function chzh() {
 	url = 'https://czspp.com/xssearch?q=' + text;
 	window.open(url, '_blank');
 }
+function cbh() {
+	text = document.getElementById('text').value;
+	url = 'https://cupfox.app/search?key=' + text ;
+	window.open(url, '_blank');
+}
 function xzjs() {
 	url = 'https://www.xiaozhongjishu.com/' ;
 	window.open(url, '_blank');
