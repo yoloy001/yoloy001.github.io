@@ -22,15 +22,15 @@ window.onload = function() {
 					"https://map.baidu.com/",
 					"https://cupfox.app/search?key=",
 					"https://www.magicalsearch.top/search?word=",
-					"https://adzhp.cn",
-					"https://www.xiaozhongjishu.com",
+					"https://adzhp.cn/?post_type=sites&s=",
+					"https://www.xiaozhongjishu.com/?post_type=sites&s=",
 					"https://music.myepoch.cn/?name=",
 					"12",
 					"https://search.jd.com/Search?keyword="
 					
 				]
 				text = document.getElementById('text').value;
-				if (i != 2 && i != 4 && i != 6 && i < 8) {
+				if (i != 2 && i != 4 && i != 6 && i < 10) {
 					// window.open('https://'+url[i]+text,'_blank');
 					var urltest = url[i] + text;
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
