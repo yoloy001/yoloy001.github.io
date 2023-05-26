@@ -1,0 +1,97 @@
+body {
+	margin: 5px;
+	/* padding: 0; */
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+iframe {
+	border: none;
+	width: 96vw;
+	height: 94vh;
+	overflow: hidden;
+	border-radius: 7px;
+}
+
+#parent {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+	/* width: 80%; */
+}
+
+#page-display {}
+
+button {
+	margin-left: 5px;
+	height: 100%;
+	/* margin-bottom: 5px; */
+	border-radius: 5px;
+	font-size: 15px;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	box-shadow: none;
+	/* transition: background-color 0.1s ease-in-out; */
+}
+
+button:hover {
+	color: white;
+	background-color: #007bff;
+}
+#search-icon {
+	max-width: 100%;
+	max-height: 100%;
+	/* margin-left: 20px; */
+	/* display: inline-block; */
+}
+#input {
+	/*输入框高度设置为40px, border占据2px，总高度为42px*/
+	width: 230px;
+	height: 26px;
+	padding-left: 5px;
+	border: 2px solid #dcdcdc;
+	border-radius: 7px;
+	font-size: 15px;
+	outline: none;display: flex;
+	
+	/* vertical-align: top; */
+	/* display: inline-block; */
+}
+#text {
+	width: 200px;
+	border: none;
+	outline: none;
+}
+
+span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	font-size: 16px;
+	color: #317EF3;
+}
+#button-li {
+  height: 30px; /* 固定高度以便于出现滚动条 */
+  overflow: auto; /* 自动启用滚动条 */
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+.button-li-son {
+	height: 30px;
+	/* margin-bottom: 10px; */
+}
+

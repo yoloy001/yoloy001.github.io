@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>聚合搜索</title>
+		<link rel="icon"  href="img/search_icon.png"/>
+		<link rel="stylesheet" type="text/css" href="css/MainStyle.css"/>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="main">
+			<div >
+				<div id="parent">
+					<!-- <strong><span>聚合搜索&nbsp;</span></strong> -->
+					<div id="input">
+						<input type="text" id="text" value="" onkeydown="entersearch(event)"/><input type="image" id="search-icon" src="img/search_icon.png" />
+					</div>
+					
+					<!-- <button type="button">百度</button> -->
+					<div id="button-li">
+						<div class="button-li-son">
+							<button type="button">F搜</button>
+							<button type="button">必应</button>
+							<button type="button">知乎</button>
+							<button type="button">微博</button>
+							<button type="button">豆瓣</button>
+							<button type="button">哔哩哔哩</button>
+							<button type="button">百度地图</button>
+							<button type="button">茶杯狐</button>
+							<button type="button">奇妙搜索</button>
+							<button type="button">爱达杂货</button>
+							<button type="button">小众技术</button>
+							<button type="button">疯狂音乐</button>
+							<button type="button">网盘搜索</button><br>
+							
+						</div>
+						
+						<div class="button-li-son">
+							<button type="button">京东</button>
+							<button type="button">待添加</button>
+							
+						</div>
+						
+						<!-- <br> -->
+					</div>
+					
+				</div>
+				<div id="page-display">
+					<iframe src = "https://www.fsoufsou.com/" ></iframe>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	
+	<script src="js/search-jump.js" type="text/javascript" charset="utf-8"></script>
+</html>
