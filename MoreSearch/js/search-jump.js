@@ -1,4 +1,4 @@
-function entersearch(event) {
+function entersearch2(event) {
 	if (event.keyCode == 13) {
 		searchJump();
 	}
