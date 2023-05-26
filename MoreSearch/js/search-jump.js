@@ -30,7 +30,7 @@ window.onload = function() {
 					
 				]
 				text = document.getElementById('text').value;
-				if (i != 2 && i != 4 && i != 6 && i < 10) {
+				if (i != 2 && i != 4 && i != 6 && i < 11) {
 					// window.open('https://'+url[i]+text,'_blank');
 					var urltest = url[i] + text;
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
