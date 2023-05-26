@@ -1,7 +1,7 @@
 function entersearch(event) {
 	if (event.keyCode == 13) {
 		text = document.getElementById('text').value;
-		url = "https://cn.bing.com/search?q=" + text;
+		url = "http://www.baidu.com/s?ie=UTF-8&wd=" + text;
 		document.getElementById("page-display").innerHTML = '<iframe src="' + url + '" ></iframe>';
 	}
 }
