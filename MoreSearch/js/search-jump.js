@@ -1,9 +1,12 @@
 function entersearch(event) {
 	if (event.keyCode == 13) {
-		text = document.getElementById('text').value;
-		url = "https://www.baidu.com/s?ie=UTF-8&wd=" + text;
-		window.open(url, '_blank');
+		searchJump();
 	}
+}
+function searchJump() {
+    text = document.getElementById('text').value;
+    url = "https://www.baidu.com/s?ie=UTF-8&wd=" + text;
+    window.open(url, '_blank');
 }
 window.onload = function() {
 	document.getElementById("text").focus();
