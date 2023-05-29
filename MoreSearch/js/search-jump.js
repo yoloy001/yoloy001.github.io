@@ -24,27 +24,27 @@ window.onload = function() {
 					"https://search.bilibili.com/all?keyword=",
 					"https://map.baidu.com/",
 					"https://cupfox.app/search?key=",
-					"https://www.magicalsearch.top/search?word=",
 					"https://adzhp.cn/?post_type=sites&s=",
 					"https://www.xiaozhongjishu.com/?post_type=sites&s=",
+					"https://www.renrendoc.com/search.html?q=",
+					"https://www.magicalsearch.top/search?word=",
 					"https://music.myepoch.cn/?name=",
-					"12",
 					"https://search.jd.com/Search?keyword="
 					
 				]
 				text = document.getElementById('text').value;
-				if (i != 2 && i != 4 && i != 6 && i < 11) {
+				if (i != 2 && i != 4 && i != 6 && i < 12) {
 					// window.open('https://'+url[i]+text,'_blank');
 					var urltest = url[i] + text;
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
-				} else if (i >= 6 && i != 8&& i != 11&& i != 13) {
+				} else if (i == 6) {
 					// window.open('https://'+url[i]+text,'_blank');
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + url[i] + '" ></iframe>';
-				} else if (i == 8) {
+				} else if (i == 10) {
 					// window.open('https://'+url[i]+text,'_blank');
 					urltest = url[i] + text + "&cpage=0";
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
-				} else if (i == 11) {
+				} else if (i == 12) {
 					// window.open('https://'+url[i]+text,'_blank');
 					urltest = url[i] + text + "&type=netease";
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
