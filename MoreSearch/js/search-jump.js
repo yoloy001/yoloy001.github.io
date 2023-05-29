@@ -26,8 +26,8 @@ window.onload = function() {
 					"https://cupfox.app/search?key=",
 					"https://adzhp.cn/?post_type=sites&s=",
 					"https://www.xiaozhongjishu.com/?post_type=sites&s=",
-					"https://www.renrendoc.com/search.html?q=",
 					"https://www.magicalsearch.top/search?word=",
+					"https://www.renrendoc.com/search.html?q=",
 					"https://music.myepoch.cn/?name=",
 					"https://search.jd.com/Search?keyword="
 					
