@@ -30,10 +30,12 @@ window.onload = function() {
 					"https://www.renrendoc.com/search.html?q=",
 					"https://music.myepoch.cn/?name=",
 					"https://search.jd.com/Search?keyword="
-					
+					"https://lestore.lenovo.com/search?k=",
+					"https://pc.qq.com/search.html#!keyword=",
+					"https://baoku.360.cn/soft/search?kw="
 				]
 				text = document.getElementById('text').value;
-				if (i != 2 && i != 4 && i != 6 && i < 12) {
+				if (i != 2 && i != 4 && i != 6 && i != 14) {
 					// window.open('https://'+url[i]+text,'_blank');
 					var urltest = url[i] + text;
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
