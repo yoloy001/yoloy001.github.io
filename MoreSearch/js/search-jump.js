@@ -65,8 +65,4 @@ window.onload = function() {
 		}(i);
 	}
 }
-document.addEventListener("keydown", function(event) {
-  if (event.altKey && event.key === "q") { // 检查是否同时按下了ALT + K
-    document.getElementById("text").focus(); // 聚焦到输入框
-  }
-});
+
