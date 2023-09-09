@@ -23,7 +23,7 @@ window.onload = function() {
 					"https://www.douban.com/search?q=",
 					"https://search.bilibili.com/all?keyword=",
 					"https://map.baidu.com/",
-					"http://cupfox.app/search?key=",
+					"https://cupfox.app/search?key=",
 					"https://adzhp.cn/?post_type=sites&s=",
 					"https://www.xiaozhongjishu.com/?post_type=sites&s=",
 					"https://www.magicalsearch.top/search?word=",
