@@ -35,7 +35,7 @@ window.onload = function() {
 					"https://baoku.360.cn/soft/search?kw="
 				]
 				text = document.getElementById('text').value;
-				if (i != 2 && i != 4 && i != 6 && i != 14) {
+				if (i != 2 && i != 4 && i != 5 && i != 6 && i != 14) {
 					// window.open('https://'+url[i]+text,'_blank');
 					var urltest = url[i] + text;
 					document.getElementById("page-display").innerHTML = '<iframe src = "' + urltest + '" ></iframe>';
