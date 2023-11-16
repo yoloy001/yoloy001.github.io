@@ -7,8 +7,7 @@ function searchJump() {
     text = document.getElementById('text').value;
     url = "https://cn.bing.com/search?q=" + text;
     document.getElementById("page-display").innerHTML = '<iframe src = "' + url + '" ></iframe>';
-    window.open(url, '_blank');
-}
+    }
 window.onload = function() {
 	document.getElementById("text").focus();
 	var btnBox = document.getElementById('parent');
