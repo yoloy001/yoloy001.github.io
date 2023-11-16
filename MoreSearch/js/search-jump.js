@@ -5,7 +5,7 @@ function entersearch(event) {
 }
 function searchJump() {
     text = document.getElementById('text').value;
-    url = "https://www.baidu.com/s?ie=UTF-8&wd=" + text;
+    url = "https://cn.bing.com/search?q=" + text;
     window.open(url, '_blank');
 }
 window.onload = function() {
@@ -16,8 +16,8 @@ window.onload = function() {
 		btnList[i].onclick = function(i) {
 			return function() {
 				url = [
+					"https://www.baidu.com/s?ie=UTF-8&wd=",
 					"https://www.fsoufsou.com/search?q=",
-					"https://cn.bing.com/search?q=",
 					"https://www.zhihu.com/search?type=content&q=",
 					"https://s.weibo.com/weibo?q=",
 					"https://www.douban.com/search?q=",
